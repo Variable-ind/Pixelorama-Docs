@@ -16,9 +16,11 @@ jobs:
         with:
           DOCS_URL: "https://www.oramainteractive.com/Pixelorama-Docs"
           OUTPUT_PDF_FILENAME: "Pixelorama-Docs.pdf"
+          COVER_TITLE: "Pixelorama Documentation"
+          EXTRA_ARGS: --coverImage="https://www.oramainteractive.com/Pixelorama-Docs/img/favicon.ico" --pdfMargin="10,20,30,40" --paperFormat="A4"
 
       - name: Upload PDF Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: Docusaurus-PDF
+          name: Pixelorama Documentation
           path: "./Pixelorama-Docs.pdf"
