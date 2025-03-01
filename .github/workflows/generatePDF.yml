@@ -20,5 +20,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: Docusaurus-PDF
-          path: "Pixelorama-Docs.pdf"
-          if-no-files-found: error
+          path: "./Pixelorama-Docs.pdf"
