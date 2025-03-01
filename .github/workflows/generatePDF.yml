@@ -15,6 +15,7 @@ jobs:
         uses: vaggeliskls/docusaurus-to-pdf@v1
         with:
           DOCS_URL: "https://www.oramainteractive.com/Pixelorama-Docs"
+          OUTPUT_PDF_FILENAME: "Pixelorama-Docs.pdf"
 
       - name: Upload PDF Artifact
         uses: actions/upload-artifact@v4
